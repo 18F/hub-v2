@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HubV2</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => false %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="<%= @bodyClass %>">
+<!-- render "shared/header" -->
+<!-- rails complaining can't find shared partial - hardcoding for now -->
+<header class="site-header">
+  <div class="wrapper">
+    <h1 class="logo"><a href="/images/logo/18F-Logo-M.png" alt="18F"> Hub</a></h1>    
+    <form action="/search/results" method="get">
+      <div class="field">
+        <label>
+          <span class="label-text">Query</span>
+          <input type="search" name="q">         
+        </label>
+      </div>
+      <button>Search</button>
+    </form>
+    <div class="signed-in">
+      <h1>Signed in as</h1>
+      <img src="" alt="Andrew Maier">
+      <span>Andrew Maier</span>
+      <a href="#">Sign out</a>
+    </div>
+  </div>
+</header>
+<div class="container">
+
+<%= yield %>
+
+</div>
+<footer class="site-footer">
+  <div class="wrapper">
+    <h1 class="logo"><a href=""><img src="/images/logo/18F-Logo-S.png" alt="18F"> Hub</a></h1>    
+    <nav>
+      <a href="#">Our homepage</a>
+      <a href=""></a>
+      <a href="#">File an issue</a>
+      <a href="">@teamPractice</a>
+    </nav>          
+  </div>
+</footer>
+
+<!-- render "shared/header" -->
+<!-- rails complaining can't find shared partial - hardcoding for now -->
+</body>
+</html>
