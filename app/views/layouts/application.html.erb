@@ -11,22 +11,29 @@
 <!-- rails complaining can't find shared partial - hardcoding for now -->
 <header class="site-header">
   <div class="wrapper">
-    <h1 class="logo"><a href="/images/logo/18F-Logo-M.png" alt="18F"> Hub</a></h1>    
+    <h1 class="logo">
+      <a href="/">
+        <%= image_tag "logo/18F-Logo-Bright-M.png", :alt => "18F" %>
+        Hub
+      </a>
+    </h1>    
     <form action="/search/results" method="get">
       <div class="field">
         <label>
-          <span class="label-text">Query</span>
+          <span class="label-text">Find the documentation <span class="youre-looking-for">you&rsquo;re looking for.</span></span>
           <input type="search" name="q">         
         </label>
       </div>
       <button>Search</button>
     </form>
-    <div class="signed-in">
-      <h1>Signed in as</h1>
-      <img src="" alt="Andrew Maier">
-      <span>Andrew Maier</span>
-      <a href="#">Sign out</a>
-    </div>
+    <nav class="nav">
+      <a class="nav-sign-out">
+        <h1>Signed in as</h1>
+        <%= image_tag "andrew_maier.jpg", :alt => "Andrew Maier" %>
+        <span>Andrew Maier</span>
+        <span class="action">Sign out</span>
+      </a>
+    </nav>
   </div>
 </header>
 <div class="container">
@@ -36,16 +43,23 @@
 </div>
 <footer class="site-footer">
   <div class="wrapper">
-    <h1 class="logo"><a href=""><img src="/images/logo/18F-Logo-S.png" alt="18F"> Hub</a></h1>    
+    <span class="hub">
+      The Hub is 
+      <a href="https://www.18f.gov/">
+        <%= image_tag "logo/18F-Logo-S.png", :alt => "18F" %>
+      </a>&rsquo;s 
+      internal homepage.
+      <a href="/about" class="learn-more">Learn more</a>
+    </span>
     <nav>
-      <a href="#">Our homepage</a>
-      <a href=""></a>
-      <a href="#">File an issue</a>
-      <a href="">@teamPractice</a>
+      <a href="https://18f.slack.com/messages/hub/" class="button">
+        Discuss this page in <span class="slack">Slack</span>
+      </a>
+      <a class="button button-edit" href="https://github.com/{{ site.github.organization }}/{{ site.github.repository }}/edit/{{ site.github.default_branch }}/{{ page.path }}">Edit this page</a>
+      <a class="button button-issue" href="https://github.com/{{ site.github.organization }}/{{ site.github.repository }}/issues/">File an issue</a>
     </nav>          
   </div>
 </footer>
-
 <!-- render "shared/header" -->
 <!-- rails complaining can't find shared partial - hardcoding for now -->
 </body>
