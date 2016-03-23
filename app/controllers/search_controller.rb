@@ -9,13 +9,10 @@ class SearchController < ApplicationController
   end
 
   def results
-
-  	@bodyClass = 'layout-homepage';
-
-	url = 'http://localhost:8080/?q=' + params[:q]
-	response = HTTParty.get(url)
-	@query = params[:q]
-	@searchResults = JSON.parse(response);
-
+    @bodyClass = 'layout-search-results';
+    url = 'http://localhost:8080/?q=' + params[:q]
+    response = HTTParty.get(url)
+    @query = params[:q]
+    @searchResults = JSON.parse(response);
   end
 end

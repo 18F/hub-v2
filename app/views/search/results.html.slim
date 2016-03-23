@@ -1,0 +1,22 @@
+- numResults = 0
+- @searchResults['results'].each do |corpusResultSet|
+  - numResults += corpusResultSet['results'].length
+
+h1
+  = numResults
+  ==" results for "
+  em.query= @query
+
+.search-results-wrapper
+  - @searchResults['results'].each do |corpusResultSet|
+    h2
+      = corpusResultSet['results'].length
+      ==" results from "
+      span= corpusResultSet['corpus']
+    - corpusResultSet['results'].each do |corpusResult|
+      article.search-result
+        a href="#{corpusResult['url']}"
+          h1 = corpusResult['title']
+          p== "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          footer
+            =="Last updated on <time>January 3rd, 2016</time> by <span class=\"author\">Melody Kramer</span>"
