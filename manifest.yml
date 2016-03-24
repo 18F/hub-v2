@@ -1,4 +1,4 @@
 applications:
 - name: hub
   memory: 64M
-  host: hub
+  buildpack: ruby_buildpack
