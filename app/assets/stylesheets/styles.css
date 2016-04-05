@@ -2024,7 +2024,7 @@ a[id]{
 	}
 	.layout-homepage .site-header form .label-text{ font-size: 48px; }
 	.layout-homepage .site-header form input{ margin-bottom: 32px; }
-	.layout-homepage .handbook-contribute h1{ font-size: 32px; }
+	.layout-homepage .handbook-guides h1{ font-size: 32px; }
 
 }
 
@@ -2034,7 +2034,7 @@ a[id]{
 
 /* @group handbook-contribute */
 
-.layout-homepage .handbook-contribute{
+.layout-homepage .handbook-guides{
 	background: #f2f2f2 url(images/grey-noise.gif);
 	border-top: 1px solid white;
 	border-bottom: 1px solid #ddd;
@@ -2042,12 +2042,12 @@ a[id]{
 	text-align: center;
 }
 
-.layout-homepage .handbook-contribute .handbook,
-.layout-homepage .handbook-contribute .contribute{
+.layout-homepage .handbook-guides .handbook,
+.layout-homepage .handbook-guides .guides{
 	padding: 1.8em 0;
 }
 
-.layout-homepage .handbook-contribute::before{
+.layout-homepage .handbook-guides::before{
 	content: "";
 	position: absolute;
 	left: 5%;
@@ -2059,7 +2059,7 @@ a[id]{
 
 @media screen and (min-width:853.33px){
 
-	.layout-homepage .handbook-contribute::before{
+	.layout-homepage .handbook-guides::before{
 		content: "";
 		position: absolute;
 		height: auto;
@@ -2071,14 +2071,14 @@ a[id]{
 		background: #ddd;
 	}
 	
-	.layout-homepage .handbook-contribute::after{
+	.layout-homepage .handbook-guides::after{
 		content: "";
 		display: table;
 		clear: both;
 	}
 	
-	.layout-homepage .handbook-contribute .handbook,
-	.layout-homepage .handbook-contribute .contribute{
+	.layout-homepage .handbook-guides .handbook,
+	.layout-homepage .handbook-guides .guides{
 		width: 50%;
 		float: left;
 		padding: 32px 2em 40px;
@@ -2087,12 +2087,12 @@ a[id]{
 }
 
 
-.layout-homepage .handbook-contribute p{
+.layout-homepage .handbook-guides p{
 	line-height: 1.33em;
 	margin-bottom: 1em;
 }
 
-.layout-homepage .handbook-contribute h1{
+.layout-homepage .handbook-guides h1{
 	font-size: 28px;
 	letter-spacing: -1px;
 	margin-bottom: 0.5em;
@@ -2100,7 +2100,7 @@ a[id]{
 	color: #222;
 }
 
-.layout-homepage .handbook-contribute a{
+.layout-homepage .handbook-guides a{
 	display: inline-block;
 	background: #bc8300;
 	border: none;
@@ -2113,7 +2113,7 @@ a[id]{
 	color: #fff;
 }
 
-.layout-homepage .handbook-contribute a:hover{
+.layout-homepage .handbook-guides a:hover{
 	background: #d9b000;
 	border-bottom: 2px solid #b57906;
 }
