@@ -1,8 +1,8 @@
-require 'team_api'
+require 'cached_api'
 
 class HomeController < ApplicationController
 
-  include TeamApi
+  include CachedApi
   
   def index
 
