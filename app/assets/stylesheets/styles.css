@@ -1829,16 +1829,6 @@ a[id]{
 	color: #bc8200;
 }
 
-.layout-homepage .site-header .popular-search-terms h1,
-.layout-homepage .site-header .popular-search-terms ul,
-.layout-homepage .site-header .popular-search-terms ul li{
-	display: inline;
-}
-
-.layout-homepage .site-header .popular-search-terms h1::after{ content: ":"; }
-.layout-homepage .site-header .popular-search-terms ul li::after{ content: ","; }
-
-.layout-homepage .site-header .popular-search-terms ul li:last-child::after{ content: "."; }
 
 .layout-homepage .site-header form input{
 	border: 2px solid #0075cf;

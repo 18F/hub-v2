@@ -1,7 +1,4 @@
----
 applications:
-- name: hub
-  memory: 64M
-  buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
-  env:
-    FORCE_HTTPS: true
+- name: hub-v2
+  memory: 512M
+  buildpack: ruby_buildpack
