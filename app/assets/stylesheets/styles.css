@@ -335,6 +335,7 @@ body{
 }
 
 a{  color: #006fbe; }
+
 a:hover{ 
 	color: #00aedf; 
 	text-decoration: underline;
@@ -1266,9 +1267,7 @@ a[id]{
 
 .page ol li{ list-style-type: decimal; }
 .page ol li li { list-style-type: lower-latin; }
-.page ol li a {
-	text-decoration: none;
-}
+
 
 
 .page ol > li li{ 
@@ -2033,7 +2032,7 @@ a[id]{
 }
 
 .layout-homepage .recent-hires h1,
-.layout-homepage  .other-information h1,
+.layout-homepage .other-information h1,
 .layout-homepage .browse-by-tag h1,
 .layout-homepage .recent-hires h1,
 .layout-homepage .top-traffic h1,
@@ -2072,6 +2071,13 @@ a[id]{
 	margin-bottom: 16px;
 }
 
+.layout-homepage .recent-hires .see-everyone {
+    font-size: medium;
+    font-style: italic;
+    font-family: Merriweather, Georgia;
+    position: absolute;
+    top: 8px;
+ }
 .layout-homepage .recent-hires{ margin-bottom: 16px; }
 
 @media screen and (min-width: 426.66px){
@@ -2460,8 +2466,6 @@ a[id]{
 
 	
 }
-
-
 /* @end */
 
 /* @end */
