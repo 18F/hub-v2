@@ -1748,6 +1748,9 @@ a[id]{
 /* @group .site-header */
 
 /* @group * mobile */
+.layout-homepage {
+	margin: 0px;
+}
 
 .layout-homepage .site-header{
 	background: #0088cb;
