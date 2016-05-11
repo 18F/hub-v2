@@ -398,11 +398,11 @@ img { max-width: 100%; }
 
 @font-face {
     font-family: 'icomoon';
-    src:    url('fonts/icomoon.eot?bx1qmb');
-    src:    url('fonts/icomoon.eot?bx1qmb#iefix') format('embedded-opentype'),
-        url('fonts/icomoon.ttf?bx1qmb') format('truetype'),
-        url('fonts/icomoon.woff?bx1qmb') format('woff'),
-        url('fonts/icomoon.svg?bx1qmb#icomoon') format('svg');
+    src: url(font-path('icomoon.eot?bx1qmb'));
+    src:    url(font-path('icomoon.eot?bx1qmb#iefix')) format('embedded-opentype'),
+        url(font-path('icomoon.ttf?bx1qmb')) format('truetype'),
+        url(font-path('icomoon.woff?bx1qmb')) format('woff'),
+        url(font-path('icomoon.svg?bx1qmb#icomoon')) format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -1907,7 +1907,7 @@ a[id]{
 /* @group handbook-contribute */
 
 .layout-homepage .handbook-guides{
-	background: #f2f2f2 url(images/grey-noise.gif);
+	background: #f2f2f2 image-url("grey-noise.gif");
 	border-top: 1px solid white;
 	border-bottom: 1px solid #ddd;
 	position: relative;
@@ -2361,7 +2361,6 @@ a[id]{
 }
 
 .layout-search-results .search-result:last-of-type a{ border-bottom: none;}
-}
 
 .layout-search-results .search-result a:hover{
 	background: #f6ffff;
